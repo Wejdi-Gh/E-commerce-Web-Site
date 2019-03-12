@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="SportShop.css">
+    <title> Fitness Paradise </title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-#e70b18 ">
+        <a class="navbar-brand" href="#"> <img src="icon.png" class="fitnessicon" alt="fitness"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse sportnavbar" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Accessories </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        All The Sports
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"> Football</a>
+                        <a class="dropdown-item" href="#"> Basketball</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="formbutton">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <form class="form-inline inscriptionbutton">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#exampleModalLong">
+                        Sign Up
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Sign UP & Enjoy </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body ">
+
+                                    <div class="information">
+                                        <form action="#" method="POST">
+
+                                            <label for="firstname"> First Name : </label>
+                                            <input type="text" name="lastname" id="first_name" class="inputarea">
+
+                                            <label for="lastname">Last Name : </label>
+                                            <input type="text" name="firstname" id="last_name" class="inputarea">
+
+                                            <label for="adress">Adress : </label>
+                                            <input type="text" name="adress" id="adress" class="inputarea">
+
+                                            <label for="email">E-mail Adress : </label>
+                                            <input type="text" name="email" id="email" class="inputarea">
+
+                                            <label for="password"> Password </label>
+                                            <input type="password" name="password" id="password" class="inputarea">
+
+                                            <label for="comments"> Comments</label>
+                                            <textarea name="comment" id="comments" class="inputarea"></textarea>
+                                            <div class="subres">
+                                                <button type="submit" class="submit"> Submit </button>
+                                                <button type="reset" class="reset"> Reset </button>
+                                            </div>
+                                        </form>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-warning login" type="button"> Login </button>
+                </form>
+
+            </div>
+            <span class="cartadd"> 0 </span>
+
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalCenter">
+                <i class="fas fa-cart-arrow-down fa-2x"></i>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">total shopping Items</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body modelcart">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Payment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="2000">
+                <img src="bandeau_1_8.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-interval="2000">
+                <img src="1900x550_slider_soldes_fitness.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-interval="2000">
+                <img src="1900x550_slider_soldes_moma_2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-interval="2000">
+                <img src="1900x550_slider_soldes_3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-interval="2000">
+                <img src="1900x550_slider_rdv_expert.jpg" class="d-block w-100" alt="...">
+            </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="container-fluid service">
+        <div class="row">
+
+            <div class="col-sm">
+                <i class="fas fa-lock fa-2x"></i>
+                <p>Secure Payment </p>
+            </div>
+
+            <div class="col-sm">
+                <i class="fas fa-truck fa-2x"></i>
+                <p> Free Delivery </p>
+            </div>
+
+            <div class="col-sm">
+                <i class="fas fa-undo fa-2x"></i>
+                <p> Free Return</p>
+            </div>
+
+            <div class="col-sm">
+                <i class="fas fa-map-marker-alt fa-2x"></i>
+                <p> Find My Store </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mycontainer">
+        <div class="card-columns">
+
+            <div class="card">
+                <img src="t-shirt-crosstraining-compression-homme-noir-blanc.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Crosstraining T-shirt</h5>
+                    <p class="card-text">Designed for the practice of Crosstraining and Bodybuilding
+                        T-shirt Bodybuilding and Crosstraining with a compressive cut.</p>
+                    <div class="buy">
+                        <button class="add-to-cart" type="button">Add to cart</button>
+                        <span> 60 $</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <img src="gant-musculation-grip-pad-training-noir.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> Grip Pad Training </h5>
+                    <p class="card-text">Designed for weight training in body weight.
+                        An excellent alternative to bodybuilding gloves. An easy product to put on. </p>
+                    <div class="buy">
+                        <button class="add-to-cart" type="button">Add to cart</button>
+                        <span>20 $</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="haltere-pvc-25-kg.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> Weight Workouts </h5>
+                    <p class="card-text">Designed for muscle building and toning exercises at home or in the gym.
+                        The +: the shape prevents them from rolling on theground.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <div class="buy">
+                        <button class="add-to-cart" type="button">Add to cart</button>
+                        <span>30 $</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="roue-abdominaux-crosstraining-ab-wheel.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> ABS wheel</h5>
+                    <p class="card-text">Made for
+                        to work the abdominals: the obliques, the right rectus and the abdominal strap.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <div class="buy">
+                        <button class="add-to-cart" type="button">Add to cart</button>
+                        <span>15 $</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="optwheygd2lc_principale_f.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> 100% Whey Gold Standard</h5>
+                    <p class="card-text">Contains Whey, Isolated and Hydrolyzed Whey Proteins (WPC, WPI and WPH)),
+                        known to give Whey its highest quality: "Gold Standard"!
+                        Instantly mix with a spoon!</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <div class="buy">
+                        <button class="add-to-cart" type="button">Add to cart</button>
+                        <span> 100 $</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="kit-halteres-musculation-50-kg.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Weight Workouts kit </h5>
+                    <p class="card-text">
+                        Complete kit, to perform many bodybuilding exercises such as biceps, triceps, deltoids and
+                        pecs, dorsal and lower body type slit and squat.</p>
+                    <div class="buy">
+                        <button class="add-to-cart" type="button">Add to cart</button>
+                        <span>350 $</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-primary text-white text-center p-3">
+                <blockquote class="blockquote mb-0">
+                    <p> Fitness-Paradise.com, your sport is our speciality</p>
+                    <footer class="blockquote-footer text-white">
+                        <small>
+                            Fitness Paradise Family <cite title="Source Title"></cite>
+                        </small>
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="card">
+                <img src="intense-run-by-domyos.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Intense Run</h5>
+                    <p class="card-text">Made for
+                        running at home to improve your cardiac performance and build muscle power
+                    </p>
+                    <div class="buy">
+                        <button class="add-to-cart" type="button">Add to cart</button>
+                        <span>1600 $</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="montre-sport-antichoc-w700xc-m-swip-noir-rouge.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Running Chronometer Watch</h5>
+                    <p class="card-text"> Made for
+                        the runner wishing a resistance watch to time out his exits and schedule split training
+                        Designed to resist and make you progress!</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <div class="buy">
+                        <button class="add-to-cart" type="button">Add to cart</button>
+                        <span>120 $</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="chaussure-de-football-adulte-terrains-secs-agility-900-mid-fg-noire.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Adult Football Boot</h5>
+                    <p class="card-text">Designed for the expert footballer playing on grass or synthetic terrain,
+                        who is looking for a semi-high and durable shoe.
+                        .</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <div class="buy">
+                        <button class="add-to-cart" type="button">Add to cart</button>
+                        <span>200 $</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="veste-polaire-de-randonnee-montagne-femme-mh920-rose.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> Hiking Fleece Jacket </h5>
+                    <p class="card-text">TDesigned for mountain hikers who want to protect themselves from the cold
+                        (comfort temperature of 10 ° C to 13 ° C).
+                        .</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <div class="buy">
+                        <button class="add-to-cart" type="button">Add to cart</button>
+                        <span> 75 $ </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="main-de-massage-electronique.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> Electronic Massage </h5>
+                    <p class="card-text">
+                        Relax your muscles with massage! The massage hand is used on many areas of the body: legs,
+                        arms, chest, neck ... The manual massage is reinforced by vibrations.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <div class="buy">
+
+                        <button class="add-to-cart" type="button">Add to cart</button>
+                        <span> 35 $ </span>
+                    </div>
+                </div>
+            </div>
+            <div class="card ">
+                <img src="pantalon-de-gardien-de-but-f100-noir.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> Goalkeeper Trousers</h5>
+                    <p class="card-text">Designed for
+                        Looking to protect yourself when diving? We have developed the F100 pants with foam
+                        reinforcements and stronger knee and hips fabric to reduce impact</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <div class="buy">
+                        <button class="add-to-cart" type="button">Add to cart</button>
+                        <span> 35 $ </span>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <p> Links : <a href="#" target="_blank"> CONTACT & COMMUNITIES </a>, <a href="#" target="_blank"> SERVICES </a>,
+            <a href="#" target="_blank"> ABOUT US </a>, <a href="#" target="_blank"> All ABOUT DELIVERY </a>, <a href="#"
+                target="_blank"> CONDITIONS OF RETURN </a> </p>
+        <p> We are leaders in 10 countries : <a href="#" target="_blank"> Poland </a>, <a href="#" target="_blank">
+                Turkey </a>, <a href="#" target="_blank"> Spain </a>, <a href="#" target="_blank"> Italy </a>, <a href="#"
+                target="_blank"> Czech Republic </a>, <a href="#" target="_blank"> Mexico </a>, <a href="#" target="_blank">Colombia
+            </a>, <a href="#" target="_blank">Brazil </a>, <a href="#" target="_blank">Argentina </a> and <a href="#"
+                target="_blank"> Chile </a> </p>
+
+        <p> www.Fitness-Pradise.com © 2019 </p>
+
+
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script src="SportShop.js"></script>
+</body>
+
+</html>

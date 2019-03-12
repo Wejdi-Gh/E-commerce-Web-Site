@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-image: url(bg-title-shop.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #a7222b;
+    position: fixed;
+    top: 0;
+    z-index: 1442;
+    width: 100vw;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffc107;
+}
+
+.navbar-brand {
+    width: 40px;
+}
+
+.sportnavbar {
+    display: flex;
+    justify-content: center;
+}
+
+.formbutton {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.inscriptionbutton {
+    display: flex;
+    justify-content: space-around;
+}
+
+.login {
+    margin-right: 80px;
+}
+
+.fitnessicon {
+    width: 100%
+}
+
+#carouselExampleIndicators, .carousel img {
+    height: 400px;
+    margin-top: 33px;
+}
+
+.mycontainer {
+    margin-top: 30px;
+}
+
+.buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.cartadd {
+    color: #ffc107;
+    font-size: 25px;
+    margin-right: 20px;
+    font-weight: bold;
+    display: none;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 5px 5px #e2dada;
+    ;
+}
+
+.service {
+    margin-top: 33px;
+    background-color: #e7e7e7;
+}
+
+.col-sm {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    transition: all 0.3s ease-in-out
+}
+
+.col-sm i {
+    margin: 20px;
+}
+
+.col-sm:hover {
+    background-color: rgb(221, 204, 204);
+}
+
+footer {
+    text-align: center;
+    font-size: 16px;
+    color: #ababab;
+    text-decoration: none;
+    border-top: 2px solid #f7f7f7;
+    margin-top: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #3d83df;
+    font-size: 12px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.fa-cart-arrow-down {
+    color: #ffc107;
+    margin-right: 50px;
+}
+
+.add-to-cart {
+    transition: all 0.3s ease-in-out;
+    background-color: #115dc0;
+    color: white;
+    border: #115dc0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Segoe UI";
+    width: 100px;
+    height: 40px;
+}
+
+.add-to-cart:hover {
+    background-color: #02306b;
+}
+
+.modal-header {
+    background-image: url(bg-title-shop.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #a7222b;
+    color: white;
+}
+
+.information {
+    margin: auto;
+}
+
+
+
+.information {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-body {
+    background-color: #ffc107;
+}
+
+.information form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90vh;
+    color: rgb(37, 30, 30);
+    font-weight: bold;
+}
+
+.submit, .reset {
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    color: rgb(37, 30, 30);
+    font-weight: bold;
+    border: 1px outset white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit:hover, .reset:hover {
+    transform: scale(1.2)
+}
+
+form input {
+    width: 300px;
+    height: 25px;
+    background-color: white;
+    color: rgb(37, 30, 30);
+    border: 1px inset white;
+    border-radius: 5px;
+}
+
+form textarea {
+    width: 300px;
+    height: 57px;
+    background-color: white;
+    color: rgb(37, 30, 30);
+    border: 1px inset white;
+    border-radius: 5px;
+}
+
+form input {
+    width: 300px;
+    height: 25px;
+    background-color: white;
+    color: rgb(37, 30, 30);
+    border: 1px inset white;
+    border-radius: 5px;
+}
+
+form textarea {
+    width: 300px;
+    height: 57px;
+    background-color: white;
+    color: rgb(37, 30, 30);
+    border: 1px inset white;
+    border-radius: 5px;
+}
+
+.subres {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.modelcart .card {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-danger {
+    background-color: #a7222b;
+    border: 0;
+    padding: auto;
+}
+
+.modal-footer {
+    background-image: url(bg-title-shop.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #a7222b;
+    color: white;
+}
